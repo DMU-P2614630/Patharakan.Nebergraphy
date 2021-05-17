@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The collection </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+   <!---font icon---->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- cart function -->
+
+   <link rel="preconnect" href="https://app.snipcart.com">
+   <link rel="preconnect" href="https://cdn.snipcart.com">
+   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
+
+      </head>
+
+  <body bgcolor="#FFFFE6">
+
+
+<!-- Menubar -->
+
+<div class="header">
+
+<div class="container">
+   <div class="navbar">
+   <div class="logo">
+    <a href="account.html"><img src="img/logo.small.png" alt="small-logo"  width="125px"></a>
+   </div>
+  <nav>
+      <ul id="MenuItems">
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="thecollection.html" >THE COLLECTION</a></li>
+        <li><a href="Nebergraphy.html" >NEBERGRAPHER</a></li>
+        <li><a href="Blog.html" > BLOG</a></li>
+        <li><a href="account.html" > ACCOUNT </a></li>
+      </ul>
+   </nav>
+
+   <button class="snipcart-checkout">
+       <!-- <a href="Cart.html"></a> -->
+       <img src="img/cart.png" alt="ADD TO CART" width="30px" height="30px">
+     </button>
+
+   <img src="img/menu.png" alt="Menu-Responsive" class="menu-icon" onclick="menutoggle()">
+   <div class="search-box">
+     <input class="search-txt" type="text" name="" placehorder="Type to search">
+     <a class="search-btn" href="#">
+       <i class="fa fa-search"></i>
+     </a>
+   </div>
+  </div>
+</div>
+</div>
+<!---single Products details---->
+
+
+<div class="single-Product">
+
+  <h8>NEBERGRAPHER</h8>
+
+  <div class="row">
+    <div class="col-2">
+    <img src="neber-img/CNV00006 2.JPG" alt="Classy." width="100%" id="ProductImg">
+
+    </div>
+     <div class="col-2">
+        <h7>Classy.</h7>
+         <h5>Amma H.</h5>
+         <p class="price-tag"> 0.99</p>
+
+         <select>
+           <option>1</option>
+           <option>2</option>
+           <option>3</option>
+         </select>
+         <button class="snipcart-add-item"
+   data-item-id="Classy."
+   data-item-price="0.99"
+   data-item-url="/neber-img/CNV00006 2.JPG"
+   data-item-description="Amma H."
+   data-item-image="neber-img/CNV00006 2.JPG"
+   data-item-name="Classy.">
+   Add to cart
+ </button>
+         <h3>Products Details<i class="fa fa-indent" aria-hidden="true"></i></h3>
+         <p>Takan by Film Camera</p>
+<!-- outline -->
+
+       <hr noshade="noshade" width="200" size="3">
+     </div>
+  </div>
+</div>
+
+<!-- comment  -->
+
+<div class="comment-box">
+  <p2>COMMENTS</p2>
+  <from action="#">
+    <input type="text" name="full_name" placeholder="Full name...">
+   <input type="email" name="email" placeholder="Email address..">
+     <textarea name="comment" placeholder="Type Your Comment..."></textarea>
+    <button type="submit">Submit </button>
+  </from>
+
+
+  <hr noshade="noshade" width="300" size="3">
+</div>
+
+
+<!-- More pictures -->
+
+   <div class="small-container">
+
+     <div class="row">
+
+       <div class="col-4">
+         <img src="neber-img/CNV00012 2.JPG" alt="Livin'.">
+         <h3>Livin'.</h3>
+          <h7>Niki K.</h7>
+          <p class="price-tag"> 1.39</p>
+       </div>
+
+       <div class="col-4">
+         <img src="neber-img/CNV00017 2.JPG" alt="Golden Time.">
+         <h3>Golden Time.</h3>
+          <h7>Fintan A.</h7>
+          <p class="price-tag"> 0.59</p>
+       </div>
+
+       <div class="col-4">
+         <img src="neber-img/CNV00050.JPG" alt="Middle.">
+         <h3>Middle.</h3>
+          <h7>Jeliva J.</h7>
+          <p class="price-tag"> 0.39</p>
+       </div>
+     </div>
+ </div>
+
+
+  <!--Footer-->
+
+  <footer>
+
+   <div class="footer-content">
+     <h4>Film Camera, Capture and Share. PERFECT !</h4>
+     <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fa fa-instragram"></i></a></li>
+     </ul>
+   </div>
+  </footer>
+
+<!---js for toggle menu---->
+
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+
+       function menutoggle(){
+
+          if(MenuItems.style.maxHeight = "0px")
+               {
+                 MenuItems.style.maxHeight = "200px";
+               }
+          else {
+                 MenuItems.style.maxHeight = "0px";
+          }
+        }
+   </script>
+
+   <script>
+   const button = document.querySelector('#Classy.')
+   const quantity = document.querySelector('#quantity')
+   quantity.addEventListener('change', () => {
+     // Sets the default quantity when adding the item
+     button.setAttribute('data-item-quantity', quantity.value)
+   })
+   const select = document.querySelector('#frame_color')
+   select.addEventListener('change', () => {
+     // Sets the default frame color when adding the item
+     button.setAttribute("data-item-custom1-value", select.value)
+   })
+   </script>
+
+
+
+   <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+   <div hidden id="snipcart" data-api-key="YmI2NWEwNjAtYzVlNS00MDUzLWI2YzEtODBmYjVmNDg3ODVhNjM3NDgzOTk4MzA4NzkwOTA1"></div>
+
+  </body>
+</html>

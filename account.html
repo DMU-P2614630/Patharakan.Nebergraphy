@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nebergraphy </title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+   <!---font icon---->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!-- Add to Cart -->
+   <link rel="preconnect" href="https://app.snipcart.com">
+   <link rel="preconnect" href="https://cdn.snipcart.com">
+
+   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+      </head>
+  <body>
+
+    <div class="header">
+
+    <div class="container">
+       <div class="navbar">
+       <div class="logo">
+        <a href="account.html"><img src="img/logo.small.png" alt="small-logo"  width="125px"></a>
+       </div>
+      <nav>
+          <ul id="MenuItems">
+            <li><a href="website.html">HOME</a></li>
+            <li><a href="thecollection.html" >THE COLLECTION</a></li>
+            <li><a href="Nebergraphy.html" >NEBERGRAPHER</a></li>
+            <li><a href="Blog.html" > BLOG</a></li>
+            <li><a href="account.html" > ACCOUNT </a></li>
+          </ul>
+       </nav>
+      <a href="Cart.html"><img src="img/cart.png" alt="ADD TO CART" width="30px" height="30px"></a>
+       <img src="img/menu.png" alt="Menu-Responsive" class="menu-icon" onclick="menutoggle()">
+       <div class="search-box">
+         <input class="search-txt" type="text" name="" placehorder="Type to search">
+         <a class="search-btn" href="#">
+           <i class="fa fa-search"></i>
+         </a>
+       </div>
+      </div>
+    </div>
+  </div>
+<!-- account page -->
+<div class="account-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <h1>GOOD MOMORIES<br>NEVER END</h1>
+        <h2>THANK YOU FOR VISITING OUR WEBSITE.</h2>
+
+        <p> The Nebergraphy website is intended to be<br>
+    a film photography community where users can share<br>
+    a photo of a moment from every part of the world before sharing <br>
+    those moment shots with the world community through the website.</p>
+
+
+      </div>
+
+      <div class="col-2">
+        <div class="form-container">
+          <div class="form-btn">
+              <span onclick="Login()">Login</span>
+              <span onclick="Register()">Register</span>
+              <hr id="Indicator">
+          </div>
+
+          <form id="LoginForm">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Login</button>
+            <a href=""Forget Password></a>
+          </form>
+
+          <form id="RegisterForm">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit" class="btn">Register</button>
+          </form>
+
+        </div>
+
+     </div>
+    </div>
+  </div>
+</div>
+
+
+  <!--Footer-->
+
+  <footer>
+
+   <div class="footer-content">
+     <h3 style="color: white;">Film Camera, Capture and Share. PERFECT !</h3>
+     <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fa fa-instragram"></i></a></li>
+     </ul>
+     <p class="copyright" style="color:white; font-size:10px;"> NEBERGRAPHER © 2021 </p>
+   </div>
+  </footer>
+
+<!---js for toggle menu---->
+
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+              MenuItems.style.maxHeight = "0px"
+
+       function menutoggle(){
+
+          if(MenuItems.style.maxHeight = "0px")
+               {
+                 MenuItems.style.maxHeight = "200px";
+               }
+          else {
+                 MenuItems.style.maxHeight = "0px";
+          }
+        }
+   </script>
+<!-- jf for toggle Form -->
+
+<script>
+
+  var LoginForm = document.getElementById("LoginForm")
+  var RegisterForm = document.getElementById("RegisterForm")
+  var Indicator = document.getElementById("Indicator")
+
+      function Register(){
+
+        RegisterForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(60px)";
+      }
+
+      function Login(){
+
+        RegisterForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(-50px)";
+      }
+
+
+
+</script>
+
+
+<script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+<div hidden id="snipcart" data-api-key="YmI2NWEwNjAtYzVlNS00MDUzLWI2YzEtODBmYjVmNDg3ODVhNjM3NDgzOTk4MzA4NzkwOTA1"></div>
+
+  </body>
+</html>

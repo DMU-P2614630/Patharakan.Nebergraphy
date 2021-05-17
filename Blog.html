@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nebergraphy </title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+   <!---font icon---->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add to Cart -->
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.css" />
+
+      </head>
+  <body>
+
+<div class="header">
+
+<div class="container">
+   <div class="navbar">
+   <div class="logo">
+    <a href="account.html"><img src="img/logo.small.png" alt="small-logo"  width="125px"></a>
+   </div>
+  <nav>
+      <ul id="MenuItems">
+        <li><a href="website.html">HOME</a></li>
+        <li><a href="thecollection.html" >THE COLLECTION</a></li>
+        <li><a href="Nebergraphy.html" >NEBERGRAPHER</a></li>
+        <li><a href="Blog.html" > BLOG</a></li>
+        <li><a href="account.html" > ACCOUNT </a></li>
+      </ul>
+   </nav>
+   <button class="snipcart-checkout">
+       <!-- <a href="Cart.html"></a> -->
+       <img src="img/cart.png" alt="ADD TO CART" width="30px" height="30px">
+     </button>
+   <img src="img/menu.png" alt="Menu-Responsive" class="menu-icon" onclick="menutoggle()">
+   <div class="search-box">
+     <input class="search-txt" type="text" name="" placehorder="Type to search">
+     <a class="search-btn" href="#">
+       <i class="fa fa-search"></i>
+     </a>
+   </div>
+  </div>
+
+<div style="text-align:center;">
+  <h1>BLOG</h1>
+</div>
+
+<div class="blog-container">
+
+  <div class="row">
+    <div class="col-b">
+      <img src="blog-img/1x/Layer 1-100.jpg" alt="Film Camera For Beginners. ">
+    </div>
+    <div class="col-b">
+      <h2>Film Camera For Beginners. </h2>
+      <p>Film photography has a lot to offer, too. One of the best things about film photography for beginners is that it teaches the fundamentals of photography at its most basic level. Understanding film photography makes you a better digital photographer.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-b">
+      <img src="blog-img/1x/Layer 2-100.jpg" alt="5 Poppular Conpact. ">
+    </div>
+    <div class="col-b">
+      <h2>5 Poppular Conpact. </h2>
+      <p>If your gear of choice has to be small, pocketable, and iconic, you might want to give these popular point and shoot film cameras a try.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-b">
+      <img src="blog-img/1x/Layer 3-100.jpg" alt="Contax T2 Reviews. ">
+    </div>
+    <div class="col-b">
+      <h2>Contax T2 Reviews.</h2>
+      <p>Welcome to Inspired Eye's Street Photography blog, where you will find articles, tips, tricks and more. Enjoy!</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-b">
+      <img src="blog-img/1x/Layer 4-100.jpg" alt="Top 5 Chart Film Photography.">
+    </div>
+    <div class="col-b">
+      <h2>Top 5 Chart Film Photography.</h2>
+      <p>We review the top community choices for shooting 35mm film in a studio setting: the best colour OR black and white 35mm. Including example.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-b">
+      <img src="blog-img/1x/Layer 5 (2)-100.jpg" alt="7 Photographers Share Their Best
+ Advice on the Art of Analog Film.">
+    </div>
+    <div class="col-b">
+      <h2>7 Photographers Share Their Best
+ Advice on the Art of Analog Film</h2>
+      <p>Film is not dead. Uncover the intricacies of analog film with tips and experiences from these seven professional photographers.</p>
+    </div>
+  </div>
+
+
+</div>
+
+  <!--Footer-->
+
+  <footer>
+
+   <div class="footer-content">
+     <h3>Film Camera, Capture and Share. PERFECT !</h3>
+     <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fa fa-instragram"></i></a></li>
+     </ul>
+     <p class="copyright" style="color:white; font-size:10px;"> NEBERGRAPHER © 2021 </p>
+   </div>
+  </footer>
+
+<!---js for toggle menu---->
+
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+              MenuItems.style.maxHeight = "0px"
+
+       function menutoggle(){
+
+          if(MenuItems.style.maxHeight = "0px")
+               {
+                 MenuItems.style.maxHeight = "200px";
+               }
+          else {
+                 MenuItems.style.maxHeight = "0px";
+          }
+        }
+   </script>
+
+
+
+
+   <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+   <div hidden id="snipcart" data-api-key="YmI2NWEwNjAtYzVlNS00MDUzLWI2YzEtODBmYjVmNDg3ODVhNjM3NDgzOTk4MzA4NzkwOTA1"></div>
+
+  </body>
+</html>

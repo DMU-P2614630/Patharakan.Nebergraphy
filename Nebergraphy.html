@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The collection </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+   <!---font icon---->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- cart function -->
+
+   <link rel="preconnect" href="https://app.snipcart.com">
+   <link rel="preconnect" href="https://cdn.snipcart.com">
+   <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css" />
+
+      </head>
+    <body bgcolor="#FFFFE6">
+
+
+      <div class="header">
+
+      <div class="container">
+         <div class="navbar">
+         <div class="logo">
+          <a href="account.html"><img src="img/logo.small.png" alt="small-logo"  width="125px"></a>
+         </div>
+        <nav>
+            <ul id="MenuItems">
+              <li><a href="website.html">HOME</a></li>
+              <li><a href="thecollection.html" >THE COLLECTION</a></li>
+              <li><a href="Nebergraphy.html" >NEBERGRAPHER</a></li>
+              <li><a href="Blog.html" > BLOG</a></li>
+              <li><a href="account.html" > ACCOUNT </a></li>
+            </ul>
+         </nav>
+         <button class="snipcart-checkout">
+             <!-- <a href="Cart.html"></a> -->
+             <img src="img/cart.png" alt="ADD TO CART" width="30px" height="30px">
+           </button>
+         <img src="img/menu.png" alt="Menu-Responsive" class="menu-icon" onclick="menutoggle()">
+         <div class="search-box">
+           <input class="search-txt" type="text" name="" placehorder="Type to search">
+           <a class="search-btn" href="#">
+             <i class="fa fa-search"></i>
+           </a>
+         </div>
+        </div>
+      </div>
+    </div>
+
+<!---header---->
+
+   <div class="row row-2">
+
+   <h1 style="text-align: center ; margin-top:20px; "> NEBERGRAPHER </h1>
+   <br>
+   <h5 style="color:#555; text-align: center ;" >Now is a perfect time to commnunicate and share your ideas and support the artists</h5>
+
+<select >
+<option>Default Sorting</option>
+<option>Sort by price</option>
+<option>Sort by location</option>
+<option>Sort by rating</option>
+<option>Sort by sales</option>
+</select>
+
+</div>
+
+
+   <div class="small-container">
+
+
+     <div class="row">
+
+        <div class="col-3">
+        <a href="nebergrapher.details-1.html"> <img src="neber-img/CNV00008 copy.JPG" alt="The place to be."></a>
+        <a href="nebergrapher.details-1.html"> <h3>The place to be.</h3></a>
+           <h7>Julie N.</h7>
+           <p class="price-tag"> 1.99</p>
+        </div>
+
+        <div class="col-3">
+        <a href="nebergrapher.detail-2.html"> <img src="neber-img/CNV00006 2.JPG" alt="Classy."></a>
+          <a href="nebergrapher.detail-2.html"> <h3>Classy.</h3></a>
+           <h7>Amma H.</h7>
+           <p class="price-tag"> 0.99</p>
+        </div>
+
+        <div class="col-3">
+          <img src="neber-img/CNV00014.JPG" alt="Kinder than you feel.">
+          <h3>Kinder than you feel.</h3>
+           <h7>Kevin J.</h7>
+           <p class="price-tag"> 1.59</p>
+        </div>
+
+        <div class="col-3">
+          <img src="neber-img/CNV00012 2.JPG" alt="Livin'.">
+          <h3>Livin'.</h3>
+           <h7>Niki K.</h7>
+           <p class="price-tag"> 1.39</p>
+        </div>
+
+        <div class="col-3">
+          <img src="neber-img/CNV00017 2.JPG" alt="Golden Time.">
+          <h3>Golden Time.</h3>
+           <h7>Fintan A.</h7>
+           <p class="price-tag"> 0.59</p>
+        </div>
+
+        <div class="col-3">
+          <img src="neber-img/CNV00050.JPG" alt="Middle.">
+          <h3>Middle.</h3>
+           <h7>Jeliva J.</h7>
+           <p class="price-tag"> 0.39</p>
+        </div>
+
+     </div>
+ </div>
+
+
+
+  <!--Footer-->
+
+  <footer>
+
+   <div class="footer-content">
+     <h4>Film Camera, Capture and Share. PERFECT !</h4>
+     <ul class="socials">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+      <li><a href="#"><i class="fa fa-instragram"></i></a></li>
+     </ul>
+     <p class="copyright" style="color:white; font-size:10px;"> NEBERGRAPHER © 2021 </p>
+   </div>
+  </footer>
+
+<!---js for toggle menu---->
+
+   <script>
+       var MenuItems = document.getElementById("MenuItems");
+
+       MenuItems.style.maxHeight = "0px";
+       
+       function menutoggle(){
+          if(MenuItems.style.maxHeight = "0px")
+               {
+                 MenuItems.style.maxHeight = "200px";
+               }
+          else {
+                 MenuItems.style.maxHeight = "0px";
+          }
+        }
+   </script>
+
+   <script async src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"></script>
+   <div hidden id="snipcart" data-api-key="YmI2NWEwNjAtYzVlNS00MDUzLWI2YzEtODBmYjVmNDg3ODVhNjM3NDgzOTk4MzA4NzkwOTA1"></div>
+
+  </body>
+</html>
